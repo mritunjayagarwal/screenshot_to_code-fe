@@ -2,8 +2,13 @@ import '../App.css';
 import LandingImage from './ui/landing_1.png';
 import Chart from './ui/chart.png';
 import PreviewDatasetImg from './ui/preview_dataset.png';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Homepage = () => {
+
+    const [toggle, setToggle] = useState(false);
+
     return (
         <>
             {/* <nav className="navbar navbar-expand-md navbar-light bg-light">
@@ -30,7 +35,39 @@ const Homepage = () => {
                     </div>
                 </div>
             </nav> */}
-            <section className="hero-section">
+            <header>
+                <nav className="navbar navbar-expand-lg py-3 m-0 w-100 fixed-top" style = {{background: "#000"}}>
+                    <div className='container'>
+                        <Link className="navbar-brand me-2" to="/"><img src='' style={{ "width": "80px", "height": "auto" }} />Syntax AI</Link>
+                        <button className="navbar-toggler text-white" onClick={() => setToggle(toggle ? false : true)} type="button">
+                            ok
+                        </button>
+                        <div className={`${toggle ? 'collapse' : ''} navbar-collapse text-white`}>
+                            <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <Link to="/" className="px-3 pt-2 btn-link active">
+                                        Swap
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/" className="px-3 pt-2 btn-link">
+                                        Pool
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#project" className="px-3 pt-2 btn-link">
+                                        Bridge
+                                    </a>
+                                </li>
+                                <li className='nav-item'>
+                                    <button className='btn btn-primary' style={{marginTop: "-5px"}}>Buy More</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section className="hero-section" style = {{paddingTop: "200px"}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -145,7 +182,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
-            <section style={{padding: 0}}>
+            <section style={{ padding: 0 }}>
                 <div className='container d-flex align-items-center justify-content-center'>
                     <img src={Chart} className='img-fluid' alt="" />
                 </div>
@@ -241,7 +278,7 @@ const Homepage = () => {
             <section className='developers-section'>
                 <div className='container'>
                     <div className='row'>
-                        
+
                     </div>
                 </div>
             </section>

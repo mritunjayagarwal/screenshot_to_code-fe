@@ -197,6 +197,13 @@ a:hover {
     /* 160% */
 }
 
+.abs-dataset{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
 /* Developer Section */
 
 .developer-section {
@@ -284,5 +291,32 @@ a:hover {
 
     section{
         padding: 50px 0;
+    }
+
+    .hero-main-head {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .hero-para {
+        font-size: 14px;
+    }
+
+    .quick-card-head{
+        font-size: 15px;
+    }
+
+    .quick-card-link{
+        font-size: 13px;
+    }
+
+    .section-para{
+        width: 100%;
+        text-align: left;
+    }
+
+    .abs-dataset{
+        position: unset;
+        margin-top: 30px;
     }
   }

@@ -179,12 +179,12 @@ const Homepage = () => {
                 <section className="qa-section">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 pb-5">
                                 <h1 className='section-heading text-white'>Why do blockchains need oracles?</h1>
                                 <p className='qa-para my-3'>Blockchains are great at providing immutable storage and deterministic verifiable computations. However, they cannot access trusted real-world information available outside their networks. Band Protocol enhances smart contract functionalities by granting access to reliable data without any central authority or points of failure.</p>
                                 <a href="/" className='text-white'>Link Here</a>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 pb-5">
                                 <h1 className='section-heading text-white'>Why do blockchains need oracles?</h1>
                                 <p className='qa-para my-3'>Blockchains are great at providing immutable storage and deterministic verifiable computations. However, they cannot access trusted real-world information available outside their networks. Band Protocol enhances smart contract functionalities by granting access to reliable data without any central authority or points of failure.</p>
                                 <a href="/" className='text-white'>Link Here</a>
@@ -198,19 +198,19 @@ const Homepage = () => {
                         <p className='section-para text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga libero magni, aperiam iusto error est ducimus minus quos cumque voluptates iste voluptate cupiditate dolorem assumenda necessitatibus vitae consequatur, officiis quasi?</p>
                         <div className='mt-5'>
                             <div className='row'>
-                                <div className='col-lg-3'>
+                                <div className='col-lg-3 col-6'>
                                     <h1 className='text-center stat-main'>5</h1>
                                     <p className='text-center stat-desc'>Validators</p>
                                 </div>
-                                <div className='col-lg-3'>
+                                <div className='col-lg-3 col-6'>
                                     <h1 className='text-center stat-main'>5</h1>
                                     <p className='text-center stat-desc'>Validators</p>
                                 </div>
-                                <div className='col-lg-3'>
+                                <div className='col-lg-3 col-6'>
                                     <h1 className='text-center stat-main'>5</h1>
                                     <p className='text-center stat-desc'>Validators</p>
                                 </div>
-                                <div className='col-lg-3'>
+                                <div className='col-lg-3 col-6'>
                                     <h1 className='text-center stat-main'>5</h1>
                                     <p className='text-center stat-desc'>Validators</p>
                                 </div>
@@ -239,7 +239,7 @@ const Homepage = () => {
                                 <p className='dataset-para mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
                             </div>
                             <div className='col-lg-6' style={{ position: "relative" }}>
-                                <div style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
+                                <div className='abs-dataset'>
                                     <img src={PreviewDatasetImg} className='img-fluid' alt="" />
                                     <div className='d-flex justify-content-center mt-4'>
                                         <div className='d-flex'>

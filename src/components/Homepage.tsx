@@ -3,6 +3,7 @@ import LandingImage from './ui/landing_1.png';
 import Chart from './ui/chart.png';
 import PreviewDatasetImg from './ui/preview_dataset.png';
 import CodeImg from './ui/landing_dataprovider.png.png';
+import DeveloperImg1 from './ui/developer-1.png';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -177,14 +178,14 @@ const Homepage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <h1 className='section-heading'>Why do blockchains need oracles?</h1>
+                            <h1 className='section-heading text-white'>Why do blockchains need oracles?</h1>
                             <p className='qa-para my-3'>Blockchains are great at providing immutable storage and deterministic verifiable computations. However, they cannot access trusted real-world information available outside their networks. Band Protocol enhances smart contract functionalities by granting access to reliable data without any central authority or points of failure.</p>
-                            <a href="/">Link Here</a>
+                            <a href="/" className='text-white'>Link Here</a>
                         </div>
                         <div className="col-lg-6">
-                            <h1 className='section-heading'>Why do blockchains need oracles?</h1>
+                            <h1 className='section-heading text-white'>Why do blockchains need oracles?</h1>
                             <p className='qa-para my-3'>Blockchains are great at providing immutable storage and deterministic verifiable computations. However, they cannot access trusted real-world information available outside their networks. Band Protocol enhances smart contract functionalities by granting access to reliable data without any central authority or points of failure.</p>
-                            <a href="/">Link Here</a>
+                            <a href="/" className='text-white'>Link Here</a>
                         </div>
                     </div>
                 </div>
@@ -232,8 +233,8 @@ const Homepage = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-6'>
-                            <h1>Hewading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                            <h1 className='dataset-main-head'>User Friendly <br /> Interface</h1>
+                            <p className='dataset-para mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
                         </div>
                         <div className='col-lg-6' style={{ position: "relative" }}>
                             <div style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
@@ -252,12 +253,12 @@ const Homepage = () => {
             <section>
                 <div className='container'>
                     <div>
-                        <h1>175+</h1>
-                        <p>cryptocurrencies</p>
+                        <h1 className='stat-main text-left text-white'>175+</h1>
+                        <p className='stat-desc text-left'>cryptocurrencies</p>
                     </div>
-                    <div>
-                        <h1>175+</h1>
-                        <p>cryptocurrencies</p>
+                    <div className='mt-5'>
+                    <h1 className='stat-main text-left text-white'>175+</h1>
+                        <p className='stat-desc text-left'>cryptocurrencies</p>
                     </div>
                 </div>
             </section>
@@ -265,6 +266,44 @@ const Homepage = () => {
                 <div className='container'>
                     <div className='row'>
 
+                    </div>
+                </div>
+            </section>
+            <section className='developer-section'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-lg-6'>
+                            <h1 className='text-white section-heading mt-4'>Built <br /> for Developers</h1>
+                            <p className='developer-para mt-3'>Engineered with the developer in mind, Syntax stands as a testament to innovation with purpose-built tools and features. From advanced code generation capabilities to seamless integration with existing workflows, our platform is meticulously crafted to empower developers, providing the essential toolkit for efficient and creative web development journeys.</p>
+                        </div>
+                        <div className='col-lg-6'>
+                            <div>
+                                <div className='developer-item w-100 d-flex align-items-center'>
+                                    <img src={DeveloperImg1} style = {{width: "40px", height: "40px"}} alt="" />
+                                    <div className='px-2' style = {{flex: 1}}>
+                                        <p className='developer-title'>Precision Code Transformation</p>
+                                    </div>
+                                </div>
+                                <div className='developer-item w-100 d-flex align-items-center'>
+                                    <img src={DeveloperImg1} style = {{width: "40px", height: "40px"}} alt="" />
+                                    <div className='px-2' style = {{flex: 1}}>
+                                        <p className='developer-title'>Precision Code Transformation</p>
+                                    </div>
+                                </div>
+                                <div className='developer-item w-100 d-flex align-items-center'>
+                                    <img src={DeveloperImg1} style = {{width: "40px", height: "40px"}} alt="" />
+                                    <div className='px-2' style = {{flex: 1}}>
+                                        <p className='developer-title'>Precision Code Transformation</p>
+                                    </div>
+                                </div>
+                                <div className='developer-item w-100 d-flex align-items-center'>
+                                    <img src={DeveloperImg1} style = {{width: "40px", height: "40px"}} alt="" />
+                                    <div className='px-2' style = {{flex: 1}}>
+                                        <p className='developer-title'>Precision Code Transformation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

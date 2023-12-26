@@ -7,18 +7,30 @@ import DeveloperImg1 from './ui/developer-1.png';
 import CoinWhite from './ui/coin-white.png';
 import Logo from './ui/logo.svg';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 const Homepage = () => {
 
     const [toggle, setToggle] = useState(false);
+    const isMobile = useMediaQuery({
+        query: '(max-width: 800px)'
+    });
+
+    useEffect(() => {
+        if (isMobile) {
+            setToggle(true);
+        } else {
+            setToggle(false)
+        }
+    }, [])
 
     return (
         <>
             <main className='landing-main'>
-                <div className="alert alert-dismissible fade show text-center p-1" style = {{background: "#4520E6", color: "#fff"}} role="alert">
+                <div className="alert alert-dismissible fade show text-center p-1" style={{ background: "#4520E6", color: "#fff" }} role="alert">
                     <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                    <button type="button" className="close" style = {{marginTop: "-10px"}} data-dismiss="alert" aria-label="Close">
+                    <button type="button" className="close" style={{ marginTop: "-10px" }} data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -27,7 +39,7 @@ const Homepage = () => {
                         <div className='container'>
                             <Link className="navbar-brand me-2" to="/"><img src={Logo} style={{ "width": "30px", "height": "auto" }} /></Link>
                             <button className="navbar-toggler text-white" onClick={() => setToggle(toggle ? false : true)} type="button">
-                                ok
+                                <span className="fa fa-bars text-white"></span>
                             </button>
                             <div className={`${toggle ? 'collapse' : ''} navbar-collapse text-white`}>
                                 <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
@@ -59,18 +71,18 @@ const Homepage = () => {
                         </div>
                     </nav>
                 </header>
-                <section className="hero-section" style={{ paddingTop: "150px" }}>
+                <section className="hero-section">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div className="col-lg-6 d-flex align-items-center justify-content-center order-md-2">
+                                <img src={LandingImage} className='img-fluid mb-5' alt="" />
+                            </div>
+                            <div className="col-lg-6 d-flex align-items-center justify-content-center order-md-1">
                                 <div>
                                     <h1 className='hero-main-head'>Transforming Vision into Code,</h1>
                                     <h1 className='hero-main-head highlight'>One Screenshot at a Time</h1>
                                     <p className='hero-para mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima reiciendis inventore nihil eius eligendi, sapiente impedit, aliquid repellat enim quibusdam itaque ad dolore rerum! Impedit facere totam repellat nemo?</p>
                                 </div>
-                            </div>
-                            <div className="col-lg-6 d-flex align-items-center justify-content-center">
-                                <img src={LandingImage} className='img-fluid' alt="" />
                             </div>
                         </div>
                     </div>

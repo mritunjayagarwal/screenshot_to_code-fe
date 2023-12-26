@@ -30,11 +30,11 @@ section {
     margin: 0 auto;
 }
 
-a{
+a {
     transition: 0.3s;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: #4520E6;
 }
@@ -57,7 +57,7 @@ a:hover{
     /* 160% */
 }
 
-.btn-link:hover{
+.btn-link:hover {
     text-decoration: none;
     color: #fff !important;
     font-size: 15px;
@@ -71,6 +71,10 @@ a:hover{
 }
 
 /* Hero Section */
+
+.hero-section {
+    padding-top: 150px
+}
 
 .hero-main-head {
     color: #FFF;
@@ -260,3 +264,25 @@ a:hover{
     line-height: 22.4px;
     /* 160% */
 }
+
+@media only screen and (max-width: 700px) {
+    .hero-section {
+        padding-top: 50px
+    }
+
+    .nav-item{
+        margin-top: 10px !important;
+    }
+
+    .btn-link{
+        margin-left: -10px;
+    }
+
+    .btn-navbar{
+        width: 100%;
+    }
+
+    section{
+        padding: 50px 0;
+    }
+  }

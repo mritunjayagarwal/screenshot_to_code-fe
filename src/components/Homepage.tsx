@@ -2,6 +2,7 @@ import '../App.css';
 import LandingImage from './ui/landing_1.png';
 import Chart from './ui/chart.png';
 import PreviewDatasetImg from './ui/preview_dataset.png';
+import CodeImg from './ui/landing_dataprovider.png.png';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -36,7 +37,7 @@ const Homepage = () => {
                 </div>
             </nav> */}
             <header>
-                <nav className="navbar navbar-expand-lg py-3 m-0 w-100 fixed-top" style = {{background: "#000"}}>
+                <nav className="navbar navbar-expand-lg py-3 m-0 w-100 fixed-top" style={{ background: "#000" }}>
                     <div className='container'>
                         <Link className="navbar-brand me-2" to="/"><img src='' style={{ "width": "80px", "height": "auto" }} />Syntax AI</Link>
                         <button className="navbar-toggler text-white" onClick={() => setToggle(toggle ? false : true)} type="button">
@@ -60,23 +61,24 @@ const Homepage = () => {
                                     </a>
                                 </li>
                                 <li className='nav-item'>
-                                    <button className='btn btn-primary' style={{marginTop: "-5px"}}>Buy More</button>
+                                    <button className='btn btn-primary' style={{ marginTop: "-5px" }}>Buy More</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </header>
-            <section className="hero-section" style = {{paddingTop: "200px"}}>
+            <section className="hero-section" style={{ paddingTop: "200px" }}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
-                            <h1>Secure, Scalable
-                                Blockchain-Agnostic
-                                Decentralized Oracle</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima reiciendis inventore nihil eius eligendi, sapiente impedit, aliquid repellat enim quibusdam itaque ad dolore rerum! Impedit facere totam repellat nemo?</p>
+                        <div className="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div>
+                                <h1 className='hero-main-head'>Transforming Vision into Code,</h1>
+                                <h1 className='hero-main-head highlight'>One Screenshot at a Time</h1>
+                                <p className='hero-para mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima reiciendis inventore nihil eius eligendi, sapiente impedit, aliquid repellat enim quibusdam itaque ad dolore rerum! Impedit facere totam repellat nemo?</p>
+                            </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 d-flex align-items-center justify-content-center">
                             <img src={LandingImage} className='img-fluid' alt="" />
                         </div>
                     </div>
@@ -84,97 +86,81 @@ const Homepage = () => {
             </section>
             <section className="quick">
                 <div className="container">
-                    <h1>Quick access to our products</h1>
-                    <div className="mt-5">
+                    <h1 className='section-heading text-white'>Quick access to our products</h1>
+                    <div className="mt-3">
                         <div className="row">
                             <div className="col-lg-4 mt-3">
-                                <div className="quick-card-top">
+                                <div className="quick-card">
                                     <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
+                                        <div className="p-2 d-flex align-items-center justify-content-center">
+                                            <img src={CodeImg} className='img-fluid' alt="" />
                                         </div>
                                         <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
+                                            <h1 className="quick-card-head">Request Price Needs</h1>
+                                            <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 mt-3">
-                                <div className="quick-card-top">
+                                <div className="quick-card">
                                     <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
+                                        <div className="p-2 d-flex align-items-center justify-content-center">
+                                            <img src={CodeImg} className='img-fluid' alt="" />
                                         </div>
                                         <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
+                                            <h1 className="quick-card-head">Request Price Needs</h1>
+                                            <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 mt-3">
-                                <div className="quick-card-top">
+                                <div className="quick-card">
                                     <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
+                                        <div className="p-2 d-flex align-items-center justify-content-center">
+                                            <img src={CodeImg} className='img-fluid' alt="" />
                                         </div>
                                         <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
+                                            <h1 className="quick-card-head">Request Price Needs</h1>
+                                            <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 mt-3">
-                                <div className="quick-card-top">
-                                    <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
-                                        </div>
-                                        <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
-                                        </div>
+                                <div className="quick-card">
+                                    <div className="p-2">
+                                        <img src={CodeImg} className='img-fluid' alt="" />
+                                        <h1 className="quick-card-head">Request Price Needs</h1>
+                                        <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 mt-3">
-                                <div className="quick-card-top">
-                                    <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
-                                        </div>
-                                        <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
-                                        </div>
+                                <div className="quick-card">
+                                    <div className="p-2">
+                                        <img src={CodeImg} className='img-fluid' alt="" />
+                                        <h1 className="quick-card-head">Request Price Needs</h1>
+                                        <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 mt-3">
-                                <div className="quick-card-top">
-                                    <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
-                                        </div>
-                                        <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
-                                        </div>
+                                <div className="quick-card">
+                                    <div className="p-2">
+                                        <img src={CodeImg} className='img-fluid' alt="" />
+                                        <h1 className="quick-card-head">Request Price Needs</h1>
+                                        <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 mt-3">
-                                <div className="quick-card-top">
-                                    <div className="d-flex">
-                                        <div className="p-2">
-                                            Image
-                                        </div>
-                                        <div className="p-2">
-                                            <h1>Request Price Needs</h1>
-                                            <a href="/">View Details</a>
-                                        </div>
+                                <div className="quick-card">
+                                    <div className="p-2">
+                                        <img src={CodeImg} className='img-fluid' alt="" />
+                                        <h1 className="quick-card-head">Request Price Needs</h1>
+                                        <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -191,13 +177,13 @@ const Homepage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <h1>Question?</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, hic necessitatibus reprehenderit, possimus sequi aliquid a voluptatem voluptates error amet voluptatibus velit inventore aspernatur iusto laudantium deserunt corporis culpa. Beatae!</p>
+                            <h1 className='section-heading'>Why do blockchains need oracles?</h1>
+                            <p className='qa-para my-3'>Blockchains are great at providing immutable storage and deterministic verifiable computations. However, they cannot access trusted real-world information available outside their networks. Band Protocol enhances smart contract functionalities by granting access to reliable data without any central authority or points of failure.</p>
                             <a href="/">Link Here</a>
                         </div>
                         <div className="col-lg-6">
-                            <h1>Question?</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, hic necessitatibus reprehenderit, possimus sequi aliquid a voluptatem voluptates error amet voluptatibus velit inventore aspernatur iusto laudantium deserunt corporis culpa. Beatae!</p>
+                            <h1 className='section-heading'>Why do blockchains need oracles?</h1>
+                            <p className='qa-para my-3'>Blockchains are great at providing immutable storage and deterministic verifiable computations. However, they cannot access trusted real-world information available outside their networks. Band Protocol enhances smart contract functionalities by granting access to reliable data without any central authority or points of failure.</p>
                             <a href="/">Link Here</a>
                         </div>
                     </div>
@@ -205,25 +191,25 @@ const Homepage = () => {
             </section>
             <section className="tokenomics-section">
                 <div className="container">
-                    <h1 className='text-center'>BandChain</h1>
-                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga libero magni, aperiam iusto error est ducimus minus quos cumque voluptates iste voluptate cupiditate dolorem assumenda necessitatibus vitae consequatur, officiis quasi?</p>
+                    <h1 className='text-center section-heading'>BandChain</h1>
+                    <p className='section-para text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga libero magni, aperiam iusto error est ducimus minus quos cumque voluptates iste voluptate cupiditate dolorem assumenda necessitatibus vitae consequatur, officiis quasi?</p>
                     <div className='mt-5'>
                         <div className='row'>
                             <div className='col-lg-3'>
-                                <h1 className='text-center'>5</h1>
-                                <p className='text-center'>Validators</p>
+                                <h1 className='text-center stat-main'>5</h1>
+                                <p className='text-center stat-desc'>Validators</p>
                             </div>
                             <div className='col-lg-3'>
-                                <h1 className='text-center'>5</h1>
-                                <p className='text-center'>Validators</p>
+                                <h1 className='text-center stat-main'>5</h1>
+                                <p className='text-center stat-desc'>Validators</p>
                             </div>
                             <div className='col-lg-3'>
-                                <h1 className='text-center'>5</h1>
-                                <p className='text-center'>Validators</p>
+                                <h1 className='text-center stat-main'>5</h1>
+                                <p className='text-center stat-desc'>Validators</p>
                             </div>
                             <div className='col-lg-3'>
-                                <h1 className='text-center'>5</h1>
-                                <p className='text-center'>Validators</p>
+                                <h1 className='text-center stat-main'>5</h1>
+                                <p className='text-center stat-desc'>Validators</p>
                             </div>
                         </div>
                     </div>

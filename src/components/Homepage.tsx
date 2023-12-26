@@ -4,6 +4,8 @@ import Chart from './ui/chart.png';
 import PreviewDatasetImg from './ui/preview_dataset.png';
 import CodeImg from './ui/landing_dataprovider.png.png';
 import DeveloperImg1 from './ui/developer-1.png';
+import CoinWhite from './ui/coin-white.png';
+import Logo from './ui/logo.svg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -13,34 +15,10 @@ const Homepage = () => {
 
     return (
         <>
-            {/* <nav className="navbar navbar-expand-md navbar-light bg-light">
-                <div className="container">
-                    <a className="navbar-brand" href="#">Animated Dropdown</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Click Me!
-                                </a>
-                                <div className="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav> */}
             <header>
-                <nav className="navbar navbar-expand-lg py-3 m-0 w-100 fixed-top" style={{ background: "#000" }}>
+                <nav className="navbar navbar-expand-lg py-3 m-0 w-100" style={{ background: "#000" }}>
                     <div className='container'>
-                        <Link className="navbar-brand me-2" to="/"><img src='' style={{ "width": "80px", "height": "auto" }} />Syntax AI</Link>
+                        <Link className="navbar-brand me-2" to="/"><img src={Logo} style={{ "width": "30px", "height": "auto" }} /></Link>
                         <button className="navbar-toggler text-white" onClick={() => setToggle(toggle ? false : true)} type="button">
                             ok
                         </button>
@@ -69,7 +47,7 @@ const Homepage = () => {
                     </div>
                 </nav>
             </header>
-            <section className="hero-section" style={{ paddingTop: "200px" }}>
+            <section className="hero-section" style={{ paddingTop: "100px" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 d-flex align-items-center justify-content-center">
@@ -169,7 +147,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
-            <section style={{ padding: 0 }}>
+            <section style={{ padding: "50px 0 0 0" }}>
                 <div className='container d-flex align-items-center justify-content-center'>
                     <img src={Chart} className='img-fluid' alt="" />
                 </div>
@@ -303,6 +281,20 @@ const Homepage = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div className='container'>
+                    <div className = "row">
+                        <div className='col-lg-6 d-flex align-items-center justify-content-center'>
+                            <img src={CoinWhite} className='img-fluid' alt="" />
+                        </div>
+                        <div className='col-lg-6'>
+                            <h1 className='about-head'>Band Token</h1>
+                            <p className='about-para mt-3 mb-5'>BandChain utilizes the native BAND token to secure the decentralized oracle network through delegated Proof-of-Stake and settlement for transaction fees. Validators are required to stake BAND token to fulfil data requests in return for a portion of the query fees and earn block rewards.</p>
+                            <a href="/" className='about-link'>Learn More</a>
                         </div>
                     </div>
                 </div>

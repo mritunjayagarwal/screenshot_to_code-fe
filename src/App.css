@@ -30,11 +30,20 @@ section {
     margin: 0 auto;
 }
 
+a{
+    transition: 0.3s;
+}
 
-.container {
+a:hover{
+    text-decoration: none;
+    color: #4520E6;
+}
+
+
+/* .container {
     max-width: 65% !important;
     margin: 0 auto;
-}
+} */
 
 .btn-link {
     color: #FFF;

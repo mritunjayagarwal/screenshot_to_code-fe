@@ -16,8 +16,14 @@ const Homepage = () => {
     return (
         <>
             <main className='landing-main'>
+                <div className="alert alert-dismissible fade show text-center p-1" style = {{background: "#4520E6", color: "#fff"}} role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" className="close" style = {{marginTop: "-10px"}} data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <header>
-                    <nav className="navbar navbar-expand-lg py-3 m-0 w-100" style={{ background: "#000" }}>
+                    <nav className="navbar navbar-expand-lg py-3 m-0 w-100 sticky-top" style={{ background: "#000" }}>
                         <div className='container'>
                             <Link className="navbar-brand me-2" to="/"><img src={Logo} style={{ "width": "30px", "height": "auto" }} /></Link>
                             <button className="navbar-toggler text-white" onClick={() => setToggle(toggle ? false : true)} type="button">
@@ -53,7 +59,7 @@ const Homepage = () => {
                         </div>
                     </nav>
                 </header>
-                <section className="hero-section" style={{ paddingTop: "100px" }}>
+                <section className="hero-section" style={{ paddingTop: "150px" }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 d-flex align-items-center justify-content-center">

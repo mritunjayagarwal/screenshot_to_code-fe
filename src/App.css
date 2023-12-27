@@ -8,6 +8,10 @@ html {
     overflow-y: auto;
 }
 
+body {
+    background: #000 !important;
+}
+
 .landing-main {
     background: #000 !important;
 }
@@ -101,6 +105,11 @@ a:hover {
 }
 
 /* Quick Section */
+
+
+.quick {
+    position: relative;
+}
 
 .quick-card {
     background: rgb(27, 27, 27);
@@ -310,6 +319,38 @@ a:hover {
     /* 160% */
 }
 
+/* Footer */
+
+footer {
+    padding: 50px 0;
+    background: #000;
+}
+
+.footer-logo {
+    font-family: Lexend Exa;
+    font-size: 20px;
+}
+
+.footer-list-head{
+    color: #FFF;
+font-family: Lexend Exa;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 22.56px; /* 141% */
+}
+
+.footer-list li {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19.2px;
+    margin: 10px 0;
+    /* 160% */
+}
+
 @media only screen and (max-width: 700px) {
     .hero-section {
         padding-top: 50px
@@ -356,5 +397,10 @@ a:hover {
     .abs-dataset {
         position: unset;
         margin-top: 30px;
+    }
+
+    .learn-more-btn{
+        border: 2px solid #000;
+        color: #000;
     }
 }

@@ -14,6 +14,7 @@ import Chain from './ui/image (2).png';
 import CoinWhite from './ui/coin-white.png';
 import ArrowUp from './ui/arrow-up.png';
 import Logo from './ui/logo.png';
+import NoiseImg from './ui/noise.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
@@ -96,6 +97,10 @@ const Homepage = () => {
                     </div>
                 </section>
                 <section className="quick">
+                    <div style = {{position: "absolute", left: 0, right: 0, bottom: "0px", background: "linear-gradient(90deg, #000 0%, #3C20E6 100%)"}}>
+                        &nbsp;
+                    </div>
+                    <img src={NoiseImg} className='img-fluid' style = {{position: "absolute",bottom: "-50px", left: "-300px"}} alt="" />
                     <div className="container">
                         <h1 className='section-heading text-white'>Quick access to our products</h1>
                         <div className="mt-3">
@@ -255,7 +260,7 @@ const Homepage = () => {
                     <div className='container'>
                         <div className='row'>
                             <div className='col-lg-6 d-flex align-items-center justify-content-center'>
-                                <img src={Chain} className='img-fluid' alt="" />
+                                <img src={Chain} className='img-fluid pb-5' alt="" />
                             </div>
                             <div className='col-lg-6'>
                                 <h1 className='accessible-head'>Syntax: Coding Made Accessible for Everyone</h1>
@@ -276,7 +281,7 @@ const Homepage = () => {
                                     <img src={PreviewDatasetImg} className='img-fluid' alt="" />
                                     <div className='d-flex justify-content-center mt-4'>
                                         <div className='d-flex'>
-                                            <button className='btn learn-more-btn mr-3'>Learn More</button>
+                                            <button className='btn learn-more-btn mr-2'>Learn More</button>
                                             <button className='btn btn-navbar text-white'>View Band Standard Dataset</button>
                                         </div>
                                     </div>
@@ -346,7 +351,8 @@ const Homepage = () => {
                         </div>
                     </div>
                 </section>
-                <section>
+                <section style = {{position: "relative"}}>
+                <img src={NoiseImg} className='img-fluid' style = {{position: "absolute", left: "-300px", top: "-90px"}} alt="" />
                     <div className='container'>
                         <div className="row">
                             <div className='col-lg-6 d-flex align-items-center justify-content-center'>
@@ -360,14 +366,54 @@ const Homepage = () => {
                         </div>
                     </div>
                 </section>
+                <div style = {{height: "15px", background: "linear-gradient(90deg, #FFF 0%, #1400A5 100%)"}}>
+                        &nbsp;
+                    </div>
                 <footer>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-lg-3'>
-
+                            <div className='col-lg-3 pb-4'>
+                                <div className='d-flex align-items-center'>
+                                <img src={Logo} className='img-fluid' style = {{width: "50px", height: "50px"}} alt="" />
+                                <p className='ml-3 text-white footer-logo'>Syntax <br /> Token</p>
+                                </div>
                             </div>
                             <div className='col-lg-9'>
-
+                                <div className='row'>
+                                <div className='col-lg-3 col-6'>
+                                    <h3 className='footer-list-head'>Build with Band</h3>
+                                    <ul className='footer-list'>
+                                        <li>Github</li>
+                                        <li>Developer Doc</li>
+                                        <li>Syntax Spec</li>
+                                    </ul>
+                                </div>
+                                <div className='col-lg-3 col-6'>
+                                    <h3 className='footer-list-head'>About</h3>
+                                    <ul className='footer-list'>
+                                        <li>Company</li>
+                                        <li>Career</li>
+                                        <li>Syntax Asset</li>
+                                    </ul>
+                                </div>
+                                <div className='col-lg-3 col-6'>
+                                    <h3 className='footer-list-head'>Official Channels</h3>
+                                    <ul className='footer-list'>
+                                        <li>Twitter</li>
+                                        <li>Telegram</li>
+                                        <li>CoinMarketCap</li>
+                                        <li>CoinGecko</li>
+                                        <li>Discord</li>
+                                    </ul>
+                                </div>
+                                <div className='col-lg-3 col-6'>
+                                    <h3 className='footer-list-head'>Contact</h3>
+                                    <ul className='footer-list'>
+                                        <li>Technical Support <br /> dev@syntaxprotocol.com</li>
+                                        <li>Business Support <br /> bd@syntaxprotocol.com</li>
+                                    </ul>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>

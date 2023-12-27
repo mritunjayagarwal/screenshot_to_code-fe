@@ -17,7 +17,6 @@ import { Switch } from "./components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
-import SettingsDialog from "./components/SettingsDialog";
 import { Settings, EditorTheme, AppState, GeneratedCodeConfig } from "./types";
 import { IS_RUNNING_ON_CLOUD } from "./config";
 import { PicoBadge } from "./components/PicoBadge";
@@ -250,7 +249,7 @@ function Code() {
   };
 
   return (
-    <div className="mt-2 dark:bg-black dark:text-white">
+    <div className="mt-2 bg-black text-white">
       {IS_RUNNING_ON_CLOUD && <PicoBadge settings={settings} />}
       {IS_RUNNING_ON_CLOUD && (
         <TermsOfServiceDialog
@@ -262,7 +261,6 @@ function Code() {
         <div className="flex grow flex-col gap-y-2 overflow-y-auto border-r border-gray-200 px-6 dark:bg-zinc-950 dark:text-white">
           <div className="flex items-center justify-between mt-10 mb-2">
             <h1 className="text-2xl ">Screenshot to Code</h1>
-            <SettingsDialog settings={settings} setSettings={setSettings} />
           </div>
 
           <OutputSettingsSection
@@ -340,13 +338,13 @@ function Code() {
                     <div className="flex items-center gap-x-2 mt-2">
                       <Button
                         onClick={downloadCode}
-                        className="flex items-center gap-x-2 dark:text-white dark:bg-gray-700"
+                        className="flex items-center gap-x-2 btn-navbar text-white"
                       >
                         <FaDownload /> Download
                       </Button>
                       <Button
                         onClick={reset}
-                        className="flex items-center gap-x-2 dark:text-white dark:bg-gray-700"
+                        className="flex items-center gap-x-2 btn-navbar text-white"
                       >
                         <FaUndo />
                         Reset

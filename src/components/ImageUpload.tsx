@@ -17,8 +17,8 @@ const baseStyle = {
   borderRadius: 2,
   borderColor: "#eeeeee",
   borderStyle: "dashed",
-  backgroundColor: "#fafafa",
-  color: "#bdbdbd",
+  backgroundColor: "#181818",
+  color: "#fff",
   outline: "none",
   transition: "border .24s ease-in-out",
 };
@@ -142,7 +142,7 @@ function ImageUpload({ setReferenceImages }: Props) {
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       <div {...getRootProps({ style: style as any })}>
         <input {...getInputProps()} />
-        <p className="text-slate-700 text-lg">
+        <p className="text-slate-700 text-white text-lg">
           Drag & drop a screenshot here, <br />
           or paste from clipboard, <br />
           or click to upload

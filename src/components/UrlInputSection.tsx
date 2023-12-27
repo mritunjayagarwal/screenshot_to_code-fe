@@ -69,7 +69,6 @@ export function UrlInputSection({ doCreate, screenshotOneApiKey }: Props) {
       <Button
         onClick={takeScreenshot}
         disabled={isLoading}
-        className="bg-slate-400"
       >
         {isLoading ? "Capturing..." : "Capture"}
       </Button>

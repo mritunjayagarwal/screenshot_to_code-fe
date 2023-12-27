@@ -73,7 +73,7 @@ a:hover {
 /* Hero Section */
 
 .hero-section {
-    padding-top: 150px
+    padding-top: 100px
 }
 
 .hero-main-head {
@@ -108,11 +108,11 @@ a:hover {
     border-radius: 16px;
 }
 
-.quick-card:hover{
+.quick-card:hover {
     background: rgb(27, 27, 27, 0.8);
 }
 
-.quick-card-bottom{
+.quick-card-bottom {
     height: 250px;
 }
 
@@ -132,6 +132,28 @@ a:hover {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
+    line-height: 22.4px;
+    /* 160% */
+}
+
+/* Accessible Section */
+
+.accessible-head {
+    color: #000;
+    font-family: Lexend Exa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 33.84px;
+    /* 141% */
+}
+
+.accessible-para {
+    color: #9A9A9A;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 22.4px;
     /* 160% */
 }
@@ -204,7 +226,7 @@ a:hover {
     /* 160% */
 }
 
-.abs-dataset{
+.abs-dataset {
     position: absolute;
     top: 0;
     left: 0;
@@ -284,19 +306,19 @@ a:hover {
         padding-top: 50px
     }
 
-    .nav-item{
+    .nav-item {
         margin-top: 10px !important;
     }
 
-    .btn-link{
+    .btn-link {
         margin-left: -10px;
     }
 
-    .btn-navbar{
+    .btn-navbar {
         width: 100%;
     }
 
-    section{
+    section {
         padding: 50px 0;
     }
 
@@ -304,26 +326,26 @@ a:hover {
         font-size: 30px;
         line-height: 40px;
     }
-    
+
     .hero-para {
         font-size: 14px;
     }
 
-    .quick-card-head{
+    .quick-card-head {
         font-size: 15px;
     }
 
-    .quick-card-link{
+    .quick-card-link {
         font-size: 13px;
     }
 
-    .section-para{
+    .section-para {
         width: 100%;
         text-align: left;
     }
 
-    .abs-dataset{
+    .abs-dataset {
         position: unset;
         margin-top: 30px;
     }
-  }
+}

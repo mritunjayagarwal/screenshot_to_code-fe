@@ -3,9 +3,15 @@ import LandingImage from './ui/landing_1.png';
 import Chart from './ui/chart.png';
 import PreviewDatasetImg from './ui/preview_dataset.png';
 import CodeImg from './ui/landing_dataprovider.png.png';
+import LandingData2 from './ui/landing_data-2.png';
+import LandingData3 from './ui/landing_data-3.png';
+import LandingData4 from './ui/landing_data-4.png';
+import LandingData5 from './ui/landing_data-5.png';
+import LandingData6 from './ui/landing_data-6.png';
+import LandingData7 from './ui/landing_data-7.png';
 import DeveloperImg1 from './ui/developer-1.png';
 import CoinWhite from './ui/coin-white.png';
-import Logo from './ui/logo.svg';
+import Logo from './ui/logo.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
@@ -109,7 +115,7 @@ const Homepage = () => {
                                     <div className="quick-card">
                                         <div className="d-flex">
                                             <div className="p-2 d-flex align-items-center justify-content-center">
-                                                <img src={CodeImg} className='img-fluid' alt="" />
+                                                <img src={LandingData2} className='img-fluid' alt="" />
                                             </div>
                                             <div className="p-2">
                                                 <h1 className="quick-card-head">Request Price Needs</h1>
@@ -122,7 +128,7 @@ const Homepage = () => {
                                     <div className="quick-card">
                                         <div className="d-flex">
                                             <div className="p-2 d-flex align-items-center justify-content-center">
-                                                <img src={CodeImg} className='img-fluid' alt="" />
+                                                <img src={LandingData3} className='img-fluid' alt="" />
                                             </div>
                                             <div className="p-2">
                                                 <h1 className="quick-card-head">Request Price Needs</h1>
@@ -132,36 +138,40 @@ const Homepage = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 mt-3">
-                                    <div className="quick-card">
+                                    <div className="quick-card quick-card-bottom">
                                         <div className="p-2">
-                                            <img src={CodeImg} className='img-fluid' alt="" />
+                                            <img src={LandingData4} className='img-fluid' alt="" />
                                             <h1 className="quick-card-head">Request Price Needs</h1>
                                             <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 mt-3">
-                                    <div className="quick-card">
+                                    <div className="quick-card quick-card-bottom">
                                         <div className="p-2">
-                                            <img src={CodeImg} className='img-fluid' alt="" />
+                                            <div className="py-3">
+                                                <img src={LandingData5} className='img-fluid' alt="" />
+                                            </div>
                                             <h1 className="quick-card-head">Request Price Needs</h1>
                                             <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 mt-3">
-                                    <div className="quick-card">
+                                    <div className="quick-card quick-card-bottom">
                                         <div className="p-2">
-                                            <img src={CodeImg} className='img-fluid' alt="" />
+                                            <div className="pt-5 pb-4">
+                                                <img src={LandingData6} className='img-fluid' alt="" />
+                                            </div>
                                             <h1 className="quick-card-head">Request Price Needs</h1>
                                             <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 mt-3">
-                                    <div className="quick-card">
+                                    <div className="quick-card quick-card-bottom">
                                         <div className="p-2">
-                                            <img src={CodeImg} className='img-fluid' alt="" />
+                                            <img src={LandingData7} className='img-fluid' alt="" />
                                             <h1 className="quick-card-head">Request Price Needs</h1>
                                             <p className="mt-5"><a href="/" className="quick-card-link">View Details</a></p>
                                         </div>

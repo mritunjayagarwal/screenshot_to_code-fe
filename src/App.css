@@ -103,10 +103,17 @@ a:hover {
 /* Quick Section */
 
 .quick-card {
-    background: #1B1B1B;
+    background: rgb(27, 27, 27);
     padding: 1em;
     border-radius: 16px;
+}
 
+.quick-card:hover{
+    background: rgb(27, 27, 27, 0.8);
+}
+
+.quick-card-bottom{
+    height: 250px;
 }
 
 .quick-card-head {

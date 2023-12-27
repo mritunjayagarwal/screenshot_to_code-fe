@@ -15,6 +15,7 @@ import CoinWhite from './ui/coin-white.png';
 import ArrowUp from './ui/arrow-up.png';
 import Logo from './ui/logo.png';
 import NoiseImg from './ui/noise.png';
+import CoinBlack from './ui/band-token-2.svg.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
@@ -351,7 +352,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </section>
-                <section style = {{position: "relative"}}>
+                <section style = {{position: "relative", padding: "100px 0"}}>
                 <img src={NoiseImg} className='img-fluid' style = {{position: "absolute", left: "-300px", top: "-90px"}} alt="" />
                     <div className='container'>
                         <div className="row">
@@ -370,6 +371,7 @@ const Homepage = () => {
                         &nbsp;
                     </div>
                 <footer>
+                    <img src={CoinBlack} style = {{position: "absolute", top: "-100px", left: "35%"}} alt="" />
                     <div className='container'>
                         <div className='row'>
                             <div className='col-lg-3 pb-4'>

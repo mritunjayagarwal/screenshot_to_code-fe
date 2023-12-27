@@ -322,8 +322,9 @@ a:hover {
 /* Footer */
 
 footer {
-    padding: 50px 0;
-    background: #000;
+    padding: 100px 0 50px 0;
+    background:#4520E6;
+    position: relative;
 }
 
 .footer-logo {

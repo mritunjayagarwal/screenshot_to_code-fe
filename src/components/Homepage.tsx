@@ -276,8 +276,8 @@ const Homepage = () => {
                                     <img src={PreviewDatasetImg} className='img-fluid' alt="" />
                                     <div className='d-flex justify-content-center mt-4'>
                                         <div className='d-flex'>
-                                            <button className='btn btn-primary'>hey</button>
-                                            <button className='btn btn-primary'>hey</button>
+                                            <button className='btn learn-more-btn mr-3'>Learn More</button>
+                                            <button className='btn btn-navbar text-white'>View Band Standard Dataset</button>
                                         </div>
                                     </div>
                                 </div>

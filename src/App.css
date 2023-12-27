@@ -158,6 +158,15 @@ a:hover {
     /* 160% */
 }
 
+
+/* */
+
+.learn-more-btn {
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    color: #fff;
+}
+
 /* QA Section */
 
 .qa-para {
